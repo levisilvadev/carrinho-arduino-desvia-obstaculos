@@ -1,6 +1,6 @@
 // Projeto: Carrinho autônomo com Arduino
 // Disciplina: Experimentação Orientada
-// Equipe: Ana Carolina Aleixo Correa, Clarisse Holanda de Castro, Kayla Gabrielle Medeiros, Levi Rocha Silva
+// Equipe: Ana Carolina Aleixo Correa, Clarisse Holanda de Castro, Kayla Gabrielle Medeiros Alves, Levi Rocha Silva
 
 // Definição dos pinos dos Motores
 const int motorEsquerdoA = 9;
@@ -69,13 +69,13 @@ void loop() {
   if (distancia <= distanciaLimite && distancia > 0) {
     // Se encontrou obstáculo
     ficarParado();
-    delay(500);
+    delay(tempoParadoAntesRe);
 
     andarParaTras();
     delay(tempoRe);
 
     ficarParado();
-    delay(300);
+    delay(tempoParadoAntesGiro);
 
     girarParaDireita();
     delay(tempoGiro);
@@ -85,7 +85,7 @@ void loop() {
     andarParaFrente();
   }
 
-  delay(100);
+  delay(intervaloLeitura);
 }
 
 // --- FUNÇÕES DE MOVIMENTO ---
