@@ -4,6 +4,9 @@ Carrinho com Arduino que anda sozinho e desvia de obstáculos usando um sensor u
 
 https://github.com/user-attachments/assets/748662c5-646f-4dc7-a620-afba436d7b2c
 
+<img width="1536" height="2754" alt="Foto do carrinho" src="https://github.com/user-attachments/assets/d091a785-e417-476d-91d0-6b975823279d" />
+
+
 ## Como funciona
 
 1. O sensor ultrassônico mede continuamente a distância até o que está à frente do carrinho.
@@ -15,11 +18,14 @@ https://github.com/user-attachments/assets/748662c5-646f-4dc7-a620-afba436d7b2c
 
 | Componente | Função |
 |---|---|
-| Arduino Uno | Placa que executa o código e controla tudo |
-| Sensor Shield v5.0 | Placa encaixada no Arduino que facilita a ligação dos fios |
+| Arduino Uno (compatível) | Placa que executa o código e controla tudo |
+| Ponte H L298N | Permite girar os motores nos dois sentidos (frente e ré) |
 | Sensor ultrassônico HC-SR04 | Mede a distância emitindo um som inaudível e cronometrando o eco |
-| Ponte H | Permite girar os motores nos dois sentidos (frente e ré) |
-| 2 motores DC com redução | Movimentam as rodas do carrinho |
+| 2 motores DC com caixa de redução (motor TT) | Movimentam as rodas do carrinho |
+| Chassi de acrílico 2WD com roda boba | Estrutura com duas rodas motorizadas e uma roda livre na frente |
+| Suporte para 4 pilhas AA | Alimenta os motores pela ponte H |
+| Power bank | Alimenta o Arduino pelo cabo USB |
+| Jumpers | Fazem as ligações entre os componentes |
 
 ## Ligações
 
@@ -52,3 +58,7 @@ https://github.com/user-attachments/assets/748662c5-646f-4dc7-a620-afba436d7b2c
 | Ana Carolina Aleixo Correa | Programação |
 | Kayla Gabrielle Medeiros Alves | Montagem |
 | Clarisse Holanda de Castro | Montagem |
+
+## Observações
+
+O kit previa uma bateria de 9V para alimentar o Arduino, mas ela apresentou problemas durante os testes. Substituímos por um power bank ligado pelo cabo USB, enquanto os motores continuaram alimentados pelas pilhas AA.
