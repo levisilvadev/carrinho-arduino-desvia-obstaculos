@@ -2,9 +2,12 @@
 
 Carrinho com Arduino que anda sozinho e desvia de obstáculos usando um sensor ultrassônico. Projeto desenvolvido em grupo na disciplina **Experimentação Orientada**, do curso de Análise e Desenvolvimento de Sistemas da **Universidade de Fortaleza (Unifor)**, em 2026.1.
 
-https://github.com/user-attachments/assets/748662c5-646f-4dc7-a620-afba436d7b2c
-
-<img width="1536" height="2754" alt="Foto do carrinho" src="https://github.com/user-attachments/assets/d091a785-e417-476d-91d0-6b975823279d" />
+<table>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/748662c5-646f-4dc7-a620-afba436d7b2c" width="300" controls></video></td>
+    <td><img width="300" alt="Foto do carrinho" src="https://github.com/user-attachments/assets/d091a785-e417-476d-91d0-6b975823279d" /></td>
+  </tr>
+</table>
 
 
 ## Como funciona
